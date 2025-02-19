@@ -69,10 +69,7 @@ export default function ResourceCurator({ onCreateResources }: ResourceCuratorPr
                 setSubject(e.target.value);
                 setError(null);
               }}
-              className={cn(
-                "bg-white border-2 border-black text-gray-900 placeholder-gray-500 text-base sm:text-lg p-6 rounded-xl h-auto",
-                error && "border-red-500 focus-visible:ring-red-500"
-              )}
+             
             />
             {error && (
               <p className="text-sm text-red-500 mt-1">{error}</p>

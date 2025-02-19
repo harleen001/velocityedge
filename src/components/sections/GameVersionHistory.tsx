@@ -22,22 +22,59 @@ const gameVersions: GameVersion[] = [
     isStable: false,
   },
   {
+    version: "1.5",
+    releaseDate: "2023-04-18",
+    description: "Added multiplayer support over LAN.",
+    isStable: false,
+  },
+  {
     version: "2.0",
-    releaseDate: "2024-05-10",
+    releaseDate: "2023-06-10",
     description: "Major update with a new map and improved graphics.",
     isStable: false,
   },
   {
     version: "2.1",
-    releaseDate: "2024-07-25",
-    description: "Bug fixes and performance improvements.",
-    isStable: true, // Marked as stable
+    releaseDate: "2023-11-20",
+    description: "Introduction of Particle Physics and Ragdoll.",
+    isStable: false,
   },
+
   {
     version: "3.0",
-    releaseDate: "2025-01-30",
-    description: "Complete overhaul with new features, UI updates, and optimizations.",
+    releaseDate: "2023-12-24",
+    description: "Complete overhaul with new features and map optimizations.",
     isStable: false,
+  },
+  {
+    version: "3.1",
+    releaseDate: "2024-02-12",
+    description: "Bug fixes and performance improvements with new AI.",
+    isStable: false,
+  },
+  {
+    version: "3.5",
+    releaseDate: "2024-04-15",
+    description: "Added newer 3D Objects for guns and player models.",
+    isStable: true,
+  },
+  {
+    version: "4.0",
+    releaseDate: "2024-06-24",
+    description: "Introduction of newer animation for entity models",
+    isStable: false,
+  },
+  {
+    version: "4.5",
+    releaseDate: "2024-08-17",
+    description: "Added minimap and newer color corrections with improved multiplayer support.",
+    isStable: false,
+  },
+  {
+    version: "5.0",
+    releaseDate: "2024-12-31",
+    description: "Fixed animation bugs and FPS Optimization.",
+    isStable: true,
   },
 ]
 
@@ -73,8 +110,8 @@ export function GameVersionHistory({ versions }: GameVersionHistoryProps) {
                 transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
                 className={`text-gray-700 hover:bg-gray-100 ${version.isStable ? 'bg-green-100' : ''}`}
               >
-                <td className="py-3 px-4 border-b">{version.version}</td>
-                <td className="py-3 px-4 border-b">{version.releaseDate}</td>
+                <td className="py-3 px-4 border-b text-left">{version.version}</td>
+                <td className="py-3 px-4 border-b text-left">{version.releaseDate}</td>
                 <td className="py-3 px-4 border-b text-left">{version.description}</td>
                 <td className="py-3 px-4 border-b">
                   {version.isStable ? (

@@ -8,7 +8,7 @@ export function Video() {
           preload="metadata"
           poster="/thumbnail.png"
         >
-          <source src="/mindmentorAI.mp4" type="video/mp4" />
+          <source src="/velocity.mp4" type="video/mp4" />
           <track
             src="/captions.vtt"
             kind="subtitles"

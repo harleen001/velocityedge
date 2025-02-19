@@ -3,9 +3,10 @@
 import { Power, Swords, Star } from 'lucide-react'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { FeaturesGrid } from '@/components/sections/FeatureGrid'
-
+import { Profile } from '@/components/sections/Profile'
 import { ReviewMarquee } from "@/components/ReviewMarquee"
 import { Video } from "@/components/Video"
+import {GameVersionSection} from '@/components/sections/GameVersionHistory'
 
 export default function Page() {
   
@@ -50,6 +51,10 @@ export default function Page() {
         </h2>
         <ReviewMarquee />
       </section>
+<Profile/>
+<GameVersionSection />
+
+
     </div>
   )
 }
